@@ -9,10 +9,58 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1-6SB7Y78u-pLIRwnwx6tZh9SN1z-b2Ej'
 export_file_name = 'export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['Acura',
+           'AM General',
+           'Aston Martin', 
+           'Audi', 
+           'Bentley', 
+           'BMW',
+           'Bugatti',
+           'Buick',
+           'Cadillac',
+           'Chevrolet',
+           'Chrysler',
+           'Daewoo',
+           'Dodge',
+           'Eagle',
+           'Ferrari',
+           'FIAT',
+           'Fisker',
+           'Ford',
+           'Geo',
+           'GMC',
+           'Honda',
+           'HUMMER',
+           'Hyundai',
+           'Infiniti',
+           'Isuzu',
+           'Jaguar',
+           'Jeep',
+           'Lamborghini',
+           'Land Rover',
+           'Lincoln',
+           'Maybach',
+           'Mazda',
+           'McLaren',
+           'Mercedes-Benz',
+           'MINI',
+           'Mitsubishi',
+           'Nissan',
+           'Plymouth',
+           'Porsche',
+           'Ram',
+           'Rolls-Royce',
+           'Scion',
+           'smart fortwo',
+           'Spyker',
+           'Suzuki',
+           'Tesla',
+           'Toyota',
+           'Volkswagen',
+           'Volvo']
 path = Path(__file__).parent
 
 app = Starlette()
