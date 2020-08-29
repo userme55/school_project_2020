@@ -29,7 +29,7 @@ function analyze() {
   xhr.onload = function(e) {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
-      el("result-label").innerHTML.style.color="#ffffff" = `Result = ${response["result"]}.html('<span style="color:white">test</span>');
+      el("result-label").innerHTML.html('<span style="color:white">test</span>') = `Result = ${response["result"]};
     }
     el("analyze-button").innerHTML = "Analyze";
   };
